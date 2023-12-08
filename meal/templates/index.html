@@ -1,16 +1,18 @@
 {% extends "base.html" %} {% block content %}
 <h1 class="mt-5">Meal</h1>
+<p>Indulge your senses in a symphony of flavors, curated from the freshest ingredients and inspired by both local traditions and global influences. From mouthwatering appetizers to decadent desserts, every plate is a masterpiece, inviting you to savor the moment and celebrate the joy of good food.</p>
 <div class="d-flex flex-wrap gap-3 p-5">
     {%for i in categories%}
     <div class="card m-auto w-25">
         <img
             src="{{i.strCategoryThumb}}"
-            class="card-img-top"
+            class="card-img-top p-1"
             alt="{{i.strCategory}}"
         />
         <div class="card-body">
-            <h5 class="card-title">{{i.strCategory}}</h5>
-            <p class="card-text">
+            <h5 class="border border-1 rounded-5 w-25 text-center">{{i.idCategory}}</h5>
+            <h5 class="card-title border border-1 rounded-3 bg-body-tertiary p-1">{{i.strCategory}}</h5>
+            <p class="card-text p-3">
                 {{i.strCategoryDescription | truncatewords:"10"}}
             </p>
         </div>

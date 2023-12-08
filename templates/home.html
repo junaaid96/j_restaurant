@@ -1,6 +1,15 @@
 {% extends "base.html" %}
 
+{% load static %}
+
 {% block content %}
-    <h1>Home</h1>
-    <p> Welcome to the home page!</p>
+    <div class="row p-5">
+        <div class="col-lg-6 col-md-12 m-auto">
+            <h1 class="text-center">Welcome to J_Restaurant</h1>
+            <p class="text-center">where exquisite flavors and warm hospitality converge to create a dining experience like no other. Immerse yourself in a culinary journey that transcends ordinary, as our chefs artfully craft each dish with passion and precision.</p>
+        </div>
+        <div class="col-lg-6 col-md-12 m-auto">
+            <img class="w-100" src="{% static 'front-img.jpg' %}" alt="food-img">
+        </div>
+    </div>
 {% endblock %}
