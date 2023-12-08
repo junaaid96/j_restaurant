@@ -1,6 +1,52 @@
 {% extends "base.html" %}
 
+{% load static %}
+
 {% block content %}
-    <h1>About Us</h1>
-    <p> Welcome to the about page!</p>
+<h1 class="my-5">About Us</h1>
+<div class="row">
+    <div class="col-lg-6 col-md-12 m-auto">
+        <h3>
+            🌟 Passion for flavors meets a commitment to excellence! 🌟</h3>
+        <p>
+            At J_Restaurant, we believe that dining is not just about satisfying
+            your hunger; it's an immersive experience that tantalizes your taste
+            buds, ignites your senses, and creates lasting memories. Nestled in
+            the heart of Dhaka, our culinary haven is a celebration of artistry,
+            community, and the pure joy of savoring delectable dishes.
+        </p>
+    </div>
+    <div class="col-lg-6 col-md-12 m-auto">
+        <img class="w-100" src="{% static '1.webp' %}" alt="img-1" />
+    </div>
+</div>
+<div class="row my-5">
+    <div class="col-lg-6 col-md-12 m-auto">
+        <img class="w-100" src="{% static '2.jpeg' %}" alt="img-2" />
+    </div>
+    <div class="col-lg-6 col-md-12 m-auto">
+        <h3>🍽 Crafting Culinary Masterpieces</h3>
+        <p>
+            Prepare your palate for a journey through an exquisite menu curated by our culinary maestros. Our chefs are
+            dedicated to the art of gastronomy, sourcing the finest ingredients to create dishes that seamlessly blend
+            innovation with tradition. From the first bite to the last, every dish is a testament to our commitment to
+            culinary excellence.
+        </p>
+    </div>
+
+</div>
+<div class="row mb-5">
+    <div class="col-lg-6 col-md-12 m-auto">
+        <h3>🌿 Farm-to-Table Freshness</h3>
+        <p>
+            We take pride in supporting local farmers and producers, ensuring that each ingredient is not only of the
+            highest quality but also contributes to the sustainability of our community. Our farm-to-table philosophy is
+            not just a trend; it's a core value that defines our commitment to freshness, flavor, and responsible
+            sourcing.
+        </p>
+    </div>
+    <div class="col-lg-6 col-md-12 m-auto">
+        <img class="w-100" src="{% static '3.jpeg' %}" alt="img-3" />
+    </div>
+</div>
 {% endblock %}
